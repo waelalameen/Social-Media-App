@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/parent_layout"
+        tools:context="com.app_mo.animefaq.QuestionDetails">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bar"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/toolbarColor"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/views"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="456,789 مشاهدة"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bar"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:textDirection="anyRtl"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            tools:targetApi="jelly_bean_mr1" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/title"/>
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_below="@+id/line"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/question_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="anyRtl"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    tools:targetApi="jelly_bean_mr1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/question_body">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/user"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/linear_inside"
+                        android:contentDescription="@string/user_image" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_inside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp">
+
+                        <TextView
+                            android:id="@+id/question_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="wael"
+                            tools:ignore="HardcodedText" />
+
+                        <com.github.curioustechizen.ago.RelativeTimeTextView
+                            android:id="@+id/question_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Oct 18 '11 at 10:28"
+                            android:textSize="10sp"
+                            tools:ignore="HardcodedText,SmallSp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/main_layout">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50">
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <TextView
+                android:id="@+id/answers_number"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="3 اجابات"
+                android:textDirection="anyRtl"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_layout"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="50"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image_post"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="20"
+                    android:contentDescription="@string/user_image"
+                    android:src="@drawable/user"
+                    tools:ignore="NestedWeights" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:maxEms="10"
+                    android:maxLength="150"
+                    android:textSize="14sp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/add_comment"/>
+
+                <ImageButton
+                    android:id="@+id/post"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:src="@drawable/send"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/send" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/answers_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/third_layout">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/no_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_below="@+id/third_layout">
+
+            <TextView
+                android:id="@+id/no_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_comments"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/third_layout">
+
+            <include layout="@layout/answer_progress_layout"
+                android:id="@+id/layout"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</layout>

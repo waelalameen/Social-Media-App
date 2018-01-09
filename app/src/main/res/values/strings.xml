@@ -1,0 +1,184 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string name="app_name">Anime FAQ</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="signup_login_note">يتطلب تسجيل حساب او تسجيل دخول لاستخدام هذا التطبيق</string>
+    <string name="email_edittext_note">البريد الالكتروني</string>
+    <string name="password_edittext_note">كلمة السر</string>
+    <string name="signup_button_note">تسجيل حساب</string>
+    <string name="login_button_note">تسجيل دخول</string>
+    <string name="forgotten_password_note">نسيت كلمة السر ؟</string>
+    <string name="email_image">email_image</string>
+    <string name="password_image">password_image</string>
+    <string name="login_with_note">او قم بتسجيل الدخول عن طريق</string>
+    <string name="facebook_login">facebook_login</string>
+    <string name="google_login">google_login</string>
+    <string name="twitter_login">twitter_login</string>
+    <string name="terms_note">بتسجيل الدخول, انت موافق على شروط الاستخدام و سياسة الخصوصية</string>
+    <string name="retype_note">ادخل كلمة المرور (6 – 16 رمز)</string>
+    <string name="username_note">اسم المستخدم*</string>
+    <string name="username_hint">ادخل اسم المستخدم</string>
+    <string name="fullname_note">الاسم الكامل*</string>
+    <string name="fullname_hint">ادخل الاسم الكامل</string>
+    <string name="email_note">البريد الالكتروني*</string>
+    <string name="email_hint">ادخل البريد الالكتروني</string>
+    <string name="title_activity_account" />
+    <string name="password_note">كلمة المرور*</string>
+    <string name="retype_password_note">اعادة كلمة المرور*</string>
+    <string name="action_filter">action_filter</string>
+    <string name="vote">vote</string>
+    <string name="user_image">user_image</string>
+    <string name="accepted">accepted</string>
+    <string name="load_more">load_more</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="large_text2">
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+    </string>
+    <string name="large_text3">
+        "Motion respects and reinforces the user as the prime mover"
+    </string>
+    <string name="arabic_text">
+                                أنمي  ( سماع)) هي أعمال الرسوم المتحركة اليابانية ولها شهرتها حول العالم. كلمة أنمي اليابانية اختصار من كلمة أنميشن الإنجليزية (بالإنجليزية: Animation) ، والتي تشير لجميع الرسوم المتحركة. أول أنمي تجاري يعود لسنة 1917، ومنذ ذلك الحين استمر إنتاج الأنمي وازدهرت صناعته. ملامح رسم الأنمي بُنيت في الستينات على أعمال أوسامو تيزوكا وانتشرت عالميًا في أواخر القرن العشرين، مكسبة إياها جمهورًا محليًّا ودوليًّا و عربياً. ينتشر ويُبث الأنمي عن طريق التلفاز و/أو السينما و/أو مباشرة للمنازل (عن طريق أقراص دي في دي وبلو راي حاليًا، وبطرق أخرى سابقًا) و/أو عن طريق الإنترنت مباشرة وينقسم إلى مجالات وتصنيفات عديدة ومتنوعة.
+                يتكون مجال صناعة الأنمي من أكثر من 430 استديو إنتاج من أبرزها استديو غيبلي وتوي انميشن وغيرهما. في اليابان يسجل الأنمي الأرقام الأعلى في مبيعات الـدي في دي و قد حقق نجاحًا كبيرًا عالميًا خاصة بعد ظهور الأنميات المتلفزة المُدبلجة بعدة لغات كالعربية والإنگليزية.
+    </string>
+    <string name="edit">edit</string>
+    <string name="ask_question">اسال سؤال</string>
+    <string name="share">share</string>
+    <string name="add_comment">اضف تعليق</string>
+    <string name="send">send</string>
+    <string name="default_text">.I use xml to populate listview and am successful I also stored video Url in a xml.What i need is I would like to play that videos from xml</string>
+    <string name="drawer_icon">drawer_icon</string>
+    <string name="user_name_header">user name</string>
+    <string name="user_mail_header">user@gmail.com</string>
+    <string name="whats_on_your_mind">سؤال جديد</string>
+    <string name="post">نشر</string>
+    <string name="select">اختر</string>
+    <string name="select_note">اختر صورة شخصية</string>
+    <string name="note_after_select">اذا لم تقم باضافة صورة الان, يمكنك اضافتها لاحقا من الضبط المستخدم</string>
+    <string name="next">next</string>
+    <string name="ok">حسنا</string>
+    <string name="progress_title">يرجى الانتظار</string>
+    <string name="progress_error">خطا</string>
+
+    <string name="facebook_app_id">157897961432323</string>
+    <string name="fb_login_protocol_scheme">fb157897961432323</string>
+    <string name="expand_collapse">expand_collapse</string>
+    <string name="CONSUMER_KEY" android:name="com.twitter.sdk.android.CONSUMER_KEY">oTEykttoLeCRFsaIdAUZrqPz8</string>
+    <string name="CONSUMER_SECRET" android:name="com.twitter.sdk.android.CONSUMER_SECRET">ZIyeF7qKsJkDUzYsPcQDjDS5v6vQ6fcE2NbUdI3wITPWSPVRxz</string>
+    <string name="action_add">action_add</string>
+    <string name="action_post">انشر</string>
+    <string name="set_title">ادخل عنوان السؤال</string>
+    <string name="write_question">ادخل السؤال</string>
+    <string name="action_favi">action_favi</string>
+    <string name="reply_edit">تعديل</string>
+    <string name="reply_delete">حذف</string>
+    <string name="reply_report">ابلاغ</string>
+    <string name="add_description">اضف الوصف الخاص بك</string>
+    <string name="write_description">اكتب الوصف الخاص بك</string>
+    <string name="hint_description">هذا الوصف سيكون ظاهرا لكل من يزور صفحتك الشخصية</string>
+    <string name="action_favorite">action_favorite</string>
+    <string name="sign_out">تسجيل خروج</string>
+    <string name="no_comments">لا توجد تعليقات</string>
+    <string name="no_replies">قم بالرد</string>
+    <string name="new_reply">رد جديد</string>
+    <string name="search">search_action</string>
+    <string name="no_favorites">لا توجد اسئلة مفضلة</string>
+</resources>

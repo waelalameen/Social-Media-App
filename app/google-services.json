@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1019681320392",
+    "project_id": "anime-faq-app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019681320392:android:15103c4409228304",
+        "android_client_info": {
+          "package_name": "com.app_mo.animefaq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019681320392-nq6rtsoqj5arh85mvcv4g7t2l7hfp3dt.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1019681320392-qa1cap00irede1f201i962r4v4cl7ls3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app_mo.animefaq",
+            "certificate_hash": "9acb6d953a1075aec457f8cbfed7bf8aac34d787"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl90nOJ3G68W-gXKVdBD_tZcvqiP-rtvE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context="com.app_mo.animefaq.network.Upload">
+
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/person"
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/user_image"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="66dp" />
+
+        <Button
+            android:id="@+id/browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="138dp"
+            android:text="@string/select"
+            android:textColor="@color/white"
+            android:background="@color/button1"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="138dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="33dp"
+            app:layout_constraintTop_toBottomOf="@+id/profile_picture" />
+
+        <TextView
+            android:id="@+id/note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_note"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/browse" />
+
+        <TextView
+            android:id="@+id/small_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/note_after_select"
+            tools:layout_editor_absoluteX="4dp"
+            tools:ignore="MissingConstraints"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="@+id/note_text"
+            android:layout_marginTop="39dp" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="72dp"
+            android:layout_height="75dp"
+            android:background="@drawable/circular_button"
+            android:contentDescription="@string/next"
+            android:src="@drawable/next"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="51dp"
+            app:layout_constraintTop_toBottomOf="@+id/small_note"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.app_mo.animefaq.PostQuestions">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:focusable="false"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:id="@+id/appBarLayout">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/toolbarColor"
+                    app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/whats_on_your_mind"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@+id/appBarLayout">
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/set_title"
+                    android:padding="15dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/edittext_border"
+                    android:textDirection="anyRtl"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:maxLines="2"
+                    android:maxLength="64"
+                    tools:ignore="UnusedAttribute"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/question"
+                    android:layout_width="0dp"
+                    android:layout_height="280dp"
+                    android:layout_below="@+id/title"
+                    android:ems="10"
+                    android:maxLines="20"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:textDirection="anyRtl"
+                    android:padding="20dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/write_question"
+                    android:inputType="textMultiLine"
+                    android:layout_alignParentRight="true"
+                    tools:ignore="UnusedAttribute"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/title"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="72dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/circular_button"
+                    android:contentDescription="@string/next"
+                    android:src="@drawable/continue_next"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginRight="5dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/question" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</layout>

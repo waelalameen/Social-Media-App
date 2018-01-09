@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbarColor"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/username_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username_note"/>
+
+            <EditText
+                android:paddingLeft="20dp"
+                android:maxEms="10"
+                android:minEms="5"
+                android:maxLength="15"
+                android:paddingRight="20dp"
+                android:hint="@string/username_hint"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/username_label"
+                android:inputType="textAutoComplete"/>
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/fullname_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fullname_note"
+                android:layout_below="@+id/username"/>
+
+            <EditText
+                android:paddingLeft="20dp"
+                android:maxEms="10"
+                android:minEms="5"
+                android:maxLength="15"
+                android:paddingRight="20dp"
+                android:hint="@string/fullname_hint"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/fullname_label"
+                android:inputType="textAutoComplete"/>
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/email_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email_note"
+                android:layout_below="@+id/fullname"/>
+
+            <EditText
+                android:paddingLeft="20dp"
+                android:maxEms="10"
+                android:minEms="5"
+                android:maxLength="50"
+                android:paddingRight="20dp"
+                android:hint="@string/email_hint"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/email_label"
+                android:inputType="textEmailAddress"/>
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password_note"
+                android:layout_below="@+id/email"/>
+
+            <EditText
+                android:paddingLeft="20dp"
+                android:maxEms="10"
+                android:minEms="6"
+                android:maxLength="16"
+                android:paddingRight="20dp"
+                android:hint="@string/retype_note"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/password_label"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/retype_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/retype_password_note"
+                android:layout_below="@+id/password"/>
+
+            <EditText
+                android:paddingLeft="20dp"
+                android:maxEms="10"
+                android:minEms="6"
+                android:maxLength="16"
+                android:paddingRight="20dp"
+                android:hint="@string/retype_note"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:id="@+id/retype_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/retype_password_label"
+                android:inputType="textPassword"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:layout_below="@+id/retype_password">
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/terms_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:padding="10dp"
+                    android:text="@string/terms_note"/>
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="80"
+                    android:background="@color/black"
+                    android:text="@string/signup_button_note"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</layout>

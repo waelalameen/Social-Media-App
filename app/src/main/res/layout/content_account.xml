@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app_mo.animefaq.Account"
+    tools:showIn="@layout/activity_account">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/questions_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    tools:ignore="NestedWeights"
+                    android:text="18"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/questions_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:text="الاسئلة"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/answers_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    tools:ignore="NestedWeights"
+                    android:text="123"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/answers_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:text="الاجابات"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/solutions_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    tools:ignore="NestedWeights"
+                    android:text="10"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/solutions_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:text="الحلول"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/main_layout">
+
+            <ImageView
+                android:id="@+id/edit_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:padding="10dp"
+                android:src="@drawable/edit_border"
+                android:contentDescription="@string/edit"/>
+
+            <TextView
+                android:id="@+id/description_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="90"
+                android:text="الوصف"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textDirection="anyRtl"
+            android:layout_below="@+id/second_layout"
+            expandableTextView:maxCollapsedLines="4"
+            expandableTextView:animDuration="200"
+            tools:targetApi="jelly_bean_mr1">
+
+            <TextView
+                android:id="@+id/expandable_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/large_text2"/>
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/expand_collapse" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        <LinearLayout
+            android:id="@+id/third_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/expand_text_view">
+
+            <ImageView
+                android:id="@+id/connect_accounts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:padding="10dp"
+                android:src="@drawable/edit"
+                android:contentDescription="@string/edit"/>
+
+            <TextView
+                android:id="@+id/links_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="90"
+                android:text="الحسابات الاخرى"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourth_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_below="@+id/third_layout">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_below="@+id/fourth_layout">
+
+            <Button
+                android:id="@+id/sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_out"
+                android:textColor="@color/white"
+                android:background="@color/button1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+</layout>

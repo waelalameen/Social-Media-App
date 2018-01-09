@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="20"
+            android:contentDescription="@string/user_image"
+            android:src="@drawable/user" />
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:orientation="vertical"
+            android:textDirection="anyRtl"
+            expandableTextView:maxCollapsedLines="4"
+            expandableTextView:animDuration="200"
+            tools:targetApi="jelly_bean_mr1">
+
+            <TextView
+                android:id="@+id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/large_text2"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/expand_collapse" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Narutaao"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/main_layout"/>
+
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:id="@+id/reply_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 9 minuts ago"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/main_layout"
+        android:layout_toRightOf="@+id/question_info"/>
+
+    <LinearLayout
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="90dp"
+        android:layout_below="@+id/question_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/like_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/like"
+            android:background="@android:color/transparent"
+            tools:ignore="NestedWeights"
+            android:contentDescription="@string/edit"/>
+
+        <TextView
+            android:id="@+id/like_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="4"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/dislike_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/dislike"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/share" />
+
+        <TextView
+            android:id="@+id/dislike_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="12"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:src="@drawable/more"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/share" />
+
+    </LinearLayout>
+
+</RelativeLayout>
